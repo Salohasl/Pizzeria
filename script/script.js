@@ -52,28 +52,6 @@ function addBasket(){
         input.setAttribute('value', (parseInt(input.getAttribute('value')) + 1).toString());
     }
 }addBasket();
-//ДОДЕЛАТЬ ПОЯВЛЕНИЯ КНОПКИ 
-/*for(let clickCombo of clickCombos){
-            clickCombo.addEventListener('click', (event)=>{
-                document.getElementById('confirmation').style.display = 'flex';
-                if(event.target == clickCombo){
-                    textCfm.textContent = clickCombo.value;
-                };
-                event.target.parentElement.querySelector("#counter").style.display = 'flex';
-                event.target.parentElement.querySelector("#clickCombo").style.display = 'none';
-            });
-    };*/
-
-
-/*function appNum(){
-        document.addEventListener('click', function(event){
-            if(event.target.classList.contains("increase")){
-                ++event.target.parentElement.querySelector("input").value
-            }else if(event.target.classList.contains("decrease")){
-                --event.target.parentElement.querySelector("input").value
-            };
-        });
-    }appNum();*/
 
 function closeCfm(){
     document.getElementById('confirmation').style.display = 'none';
