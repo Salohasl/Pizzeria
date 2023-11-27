@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru" class="">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+<meta name="HandheldFriendly" content="true" >
+<meta name="MobileOptimized" content="width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Pizza</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Верстальщик, веб разработчик, программист, верстка сайтов, заказать сайт, Разработчик Калининград, Веб разработчик Калининград, Верстальщик Калининград, создать сайт Калининград, Сайт с 0, верстка сайта, создание сайта, программист по созданию сайта" />
+<meta name="description" content="Разработка лучших сайтов по готовому дизайну или с 0!" />
+<link rel="shortcut icon" href="/icon/icon.png">
+<link rel="stylesheet" href="/style/normalize.css">
+<link rel="stylesheet" href="/style/media.css">
+<link rel="stylesheet" href="/style/style.css">
+<link rel="stylesheet" href="/styleForm/form.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Nanum+Myeongjo&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+<header>
+  <a href="#" class="logo"><img src="/img/Logo.png" alt=""></a> 
+  <div class="block-job">
+    <h4>Город: Калининград</h4>
+    <nav>
+      <ul>
+        <li><a href="#combo">Комбо</a></li>
+        <li><a href="#">Пицца</a></li>
+        <li><a href="#">Закуски</a></li>
+        <li><a href="#">Бургеры</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="block-job_elem">
+    <div class="time">
+      <img src="/icon/time.png" alt="время работы" width="15px" height="15px">
+      <p>Режим работы: <b>c 00:00 до 00:00</b></p>
+    </div>
+    <a href="tel:+79521172318"><img src="/icon/phone.png" alt="">+7(952)117-23-18</a>
+  </div>
+
+  <div class="basket">
+    <a href="#"><img src="/icon/Vector.png" alt="">
+    <span class="basket-text">Корзина пуста</span></a> 
+  </div>
+  
+  <div class="menuBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<body>
+  <div class="btn-up btn-up_hide"></div>
+  <main>
+
+    <div class="navUp" id="navUp" style="display: none;">
+      <a href="#" class="logo"><img src="/img/Logo.png" alt=""></a> 
+      <div class="block-job">
+        <nav>
+          <ul>
+            <li><a href="#combo">Комбо</a></li>
+            <li><a href="#">Пицца</a></li>
+            <li><a href="#">Закуски</a></li>
+            <li><a href="#">Бургеры</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="basket">
+        <a href="#"><img src="/icon/Vector.png" alt="">
+        <span class="basket-text">Корзина пуста</span></a> 
+      </div>
+    </div>
+
+      <div class="confirmation" id="confirmation" style="display: none;">
+        <div class="block-confirmation">
+          <button onclick="closeCfm()"><img src="/icon/close.png" alt="close" width="15px" height="15px"></button>
+          <div class="block-confirmation_text">
+            <div class="icon-text">
+              <img src="/icon/basket.png" alt="корзина">
+              <h4></h4>
+              <span id="text-confirmation">Корзина пустая</span>
+            </div>
+            <div class="button-confirmation">
+              <button class="catalogBtn" onclick="closeCfm()">Продолжить</button>
+              <button class="basketBtn">Оформить заказ</button>
+            </div>
+          </div>
+          <img class="fon" src="/img/fon.png" alt="">
+        </div>
+      </div>
+
+    <h2>Комбо</h2>
+    <div class="combo" id="combo"> 
+      <div class="combo-twoPizza">
+        <img src="/img/twoPizza.png" alt="Пять пицц" width="200px" height="200px">
+        <h4>2 пиццы ХИТ</h4>
+        <p>Пепперони 32см + Ветчина и грибы 32см</p>
+        <div class="form-style" id="form">
+          <span>990 Р</span>
+          <button id="clickCombo" class="clickCombo" value="«2 пиццы ХИТ» добавлен(а) в корзину">В корзину</button>
+          <div class="counter" id="counter" style="display: none;">
+            <button class="decrease">-</button>
+            <input type="text" value="1" disabled>
+            <button class="increase">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="combo-fivePizza">
+        <img src="/img/fivepizza.png" alt="Пять пицц" width="200px" height="200px">
+        <h4>5 пицц на компанию</h4>
+        <p>Маргарита 32см, Пепперони 32см, Ветчина и
+          <br> грибы 32см, 4 сыра 32см, Жульен 32см</p>
+          <div class="form-style" id="form">
+            <span>2 250 Р</span>
+            <button id="clickCombo" class="clickCombo" value="«5 пицц на компанию» добавлен(а) в корзину">В корзину</button>
+            <div class="counter" id="counter" style="display: none;">
+              <button class="decrease">-</button>
+              <input type="text" value="1" disabled class="input">
+              <button class="increase">+</button>
+            </div>
+          </div>
+      </div>
+      <div class="combo-fourPizza">
+        <img src="/img/fourPizza.jpg" alt="Пять пицц" width="200px" height="200px">
+        <h4>4 фирменные</h4>
+        <p>Бьянка 28см, Кантри 28см, Охотничья 28см,
+          <br> Цезарь 28см</p>
+          <div class="form-style" id="form">
+            <span>2 090 Р</span>
+            <button id="clickCombo" class="clickCombo" value="«4 фирменные пиццы» добавлен(а) в корзину">В корзину</button>
+            <div class="counter" id="counter" style="display: none;">
+              <button class="decrease">-</button>
+              <input type="text" value="1"disabled>
+              <button class="increase">+</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <h2>Горячая пицца</h2>
+
+    <div class="pizza" id="pizza"> 
+      <div class="pizzaComp">
+        <img src="/img/4sesson.png" alt="4сезона" width="200px" height="200px">
+        <h4>4 сезона пицца</h4>
+        <p>Томатный соус, моцарелла, пепперони,
+         <br> ветчина, перец болгарский, шампиньоны</p>
+        <div class="form_radio_group">
+          <div class="form_radio_group-item">
+            <input id="radio-1" type="radio" name="radio-1" value="1" checked>
+            <label for="radio-1">28 см</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-2" type="radio" name="radio-1" value="2">
+            <label for="radio-2">32 см</label>
+          </div>
+          <div class="button-dop">
+            <button>Топпинг<img src="/icon/iconDop.png" alt="+" width="25px" height="25px"></button>
+          </div>
+        </div>
+        <hr>
+        <div class="form-style" id="form">
+          <span>582 Р</span>
+          <button id="clickCombo" class="clickCombo" value="«4 сезона пицца» добавлен(а) в корзину">В корзину</button>
+          <div class="counter" id="counter" style="display: none;">
+            <button class="decrease">-</button>
+            <input type="text" value="1" disabled>
+            <button class="increase">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="pizzaComp">
+        <img src="/img/4chese.png" alt="4сыра" width="200px" height="200px">
+        <h4>4 сыра пицца</h4>
+        <p>Сливки, крем-сыр, моцарелла, горгонзола,
+          <br> грана падано</p>
+        <div class="form_radio_group">
+          <div class="form_radio_group-item">
+            <input id="radio-3" type="radio" name="radio-2" value="1" checked>
+            <label for="radio-3">28 см</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-4" type="radio" name="radio-2" value="2">
+            <label for="radio-4">32 см</label>
+          </div>
+          <button>Топпинг<img src="/icon/iconDop.png" alt="+" width="25px" height="25px"></button>
+        </div>
+        <hr>
+        <div class="form-style" id="form">
+          <span>550 Р</span>
+          <button id="clickCombo" class="clickCombo" value="«4 сыра пицца» добавлен(а) в корзину">В корзину</button>
+          <div class="counter" id="counter" style="display: none;">
+            <button class="decrease">-</button>
+            <input type="text" value="1" disabled>
+            <button class="increase">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="pizzaComp">
+        <img src="/img/asorti.png" alt="Ассорти" width="200px" height="200px">
+        <h4>Ассорти пицца</h4>
+        <p>Томатный соус, моцарелла, ветчина,
+         <br> пепперони, шампиньоны, перец болгарский,
+          <br> маслины</p>
+          <div class="form_radio_group up">
+          <div class="form_radio_group-item">
+            <input id="radio-5" type="radio" name="radio-3" value="1" checked>
+            <label for="radio-5">28 см</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-6" type="radio" name="radio-3" value="2">
+            <label for="radio-6">32 см</label>
+          </div>
+          <button>Топпинг<img src="/icon/iconDop.png" alt="+" width="25px" height="25px"></button>
+        </div>
+        <hr>
+        <div class="form-style" id="form">
+          <span>578 Р</span>
+          <button id="clickCombo" class="clickCombo" value="«Ассорти пицца» добавлен(а) в корзину">В корзину</button>
+          <div class="counter" id="counter" style="display: none;">
+            <button class="decrease">-</button>
+            <input type="text" value="1" disabled>
+            <button class="increase">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="pizzaComp">
+        <img src="/img/barbeku.png" alt="барбекью" width="200px" height="200px">
+        <h4>Барбекю пицца</h4>
+        <p>Томатный соус, моцарелла, бекон, курица, соус
+          <br> барбекю</p>
+          <div class="form_radio_group">
+            <div class="form_radio_group-item">
+              <input id="radio-7" type="radio" name="radio-4" value="1" checked>
+              <label for="radio-7">28 см</label>
+            </div>
+            <div class="form_radio_group-item">
+              <input id="radio-8" type="radio" name="radio-4" value="2">
+              <label for="radio-8">32 см</label>
+            </div>
+            <button>Топпинг<img src="/icon/iconDop.png" alt="+" width="25px" height="25px"></button>
+          </div>
+          <hr>
+        <div class="form-style" id="form">
+          <span>617 Р</span>
+          <button id="clickCombo" class="clickCombo" value="«Барбекю пицца» добавлен(а) в корзину">В корзину</button>
+          <div class="counter" id="counter" style="display: none;">
+            <button class="decrease">-</button>
+            <input type="text" value="1" disabled>
+            <button class="increase">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <script src="/script/script.js"></script>
+  <footer class="footer">
+    
+    
+    
+  </footer>
+
+ 
+</body>
+</html>
+

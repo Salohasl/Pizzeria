@@ -1,0 +1,517 @@
+@charset "UTF-8";
+* {
+  font-family: "Lora", serif;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+header .logo {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+header .block-job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .block-job h4 {
+  font-weight: 200;
+  margin-left: -112px;
+}
+header .block-job ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .block-job ul a {
+  text-decoration: none;
+  color: #333333;
+  margin-left: 50px;
+  font-size: 15px;
+  transition: 0.4s;
+}
+header .block-job ul a:hover {
+  color: #FECC00;
+}
+header .block-job_elem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+header .block-job_elem .time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+}
+header .block-job_elem .time img {
+  margin-right: 20px;
+}
+header .block-job_elem a {
+  margin-top: 27px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .block-job_elem a:hover {
+  text-decoration: underline;
+}
+header .block-job_elem a img {
+  margin-right: 20px;
+}
+header .basket {
+  margin-top: 80px;
+  border: 2px solid #FECC00;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header .basket a {
+  text-decoration: none;
+  color: #333333;
+}
+
+main {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1000px;
+}
+main h2 {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 50px;
+}
+main .combo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+main .combo img {
+  margin-left: 10px;
+}
+main .combo .combo-twoPizza {
+  border: 1px solid rgba(130, 130, 130, 0.2);
+  padding: 20px;
+  margin: 20px;
+  height: 433px;
+  transition: 1s;
+}
+main .combo .combo-twoPizza:hover {
+  box-shadow: 2px 2px 15px rgba(130, 130, 130, 0.5);
+}
+main .combo .combo-twoPizza h4 {
+  font-weight: 300;
+  color: #333333;
+}
+main .combo .combo-twoPizza p {
+  margin-top: 35px;
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+  border-bottom: 1px dashed #828282;
+}
+main .combo .combo-fivePizza {
+  border: 1px solid rgba(130, 130, 130, 0.2);
+  padding: 20px;
+  margin: 20px;
+  height: 433px;
+  transition: 1s;
+}
+main .combo .combo-fivePizza:hover {
+  box-shadow: 2px 2px 15px rgba(130, 130, 130, 0.5);
+}
+main .combo .combo-fivePizza h4 {
+  font-weight: 300;
+  color: #333333;
+}
+main .combo .combo-fivePizza p {
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+  border-bottom: 1px dashed #828282;
+}
+main .combo .combo-fourPizza {
+  border: 1px solid rgba(130, 130, 130, 0.2);
+  padding: 20px;
+  margin: 20px;
+  height: 433px;
+  transition: 1s;
+}
+main .combo .combo-fourPizza:hover {
+  box-shadow: 2px 2px 15px rgba(130, 130, 130, 0.5);
+}
+main .combo .combo-fourPizza h4 {
+  font-weight: 300;
+  color: #333333;
+}
+main .combo .combo-fourPizza p {
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+  border-bottom: 1px dashed #828282;
+}
+main .combo .form-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  margin-top: 50px;
+  color: #333333;
+}
+main .combo .form-style button {
+  background-color: #FECC00;
+  border: none;
+  width: 103px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.4s;
+}
+main .combo .form-style button:hover {
+  background-color: #dfb200;
+}
+main .combo .form-style span {
+  font-size: 14px;
+}
+main .combo .form-style .counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .combo .form-style .counter button {
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid rgba(87, 86, 86, 0.2);
+}
+main .combo .form-style .counter input {
+  width: 35px;
+  height: 35px;
+  background-color: #FECC00;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+}
+main hr {
+  border: 1px solid #FECC00;
+}
+main .pizza {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .pizza .pizzaComp {
+  border: 1px solid rgba(130, 130, 130, 0.2);
+  margin: 10px;
+  height: 523px;
+  width: 310px;
+  transition: 1s;
+  /* Checked */
+  /* Hover */
+}
+main .pizza .pizzaComp:hover {
+  box-shadow: 2px 2px 15px rgba(130, 130, 130, 0.5);
+}
+main .pizza .pizzaComp h4 {
+  padding: 10px;
+  font-weight: 300;
+  color: #333333;
+}
+main .pizza .pizzaComp p {
+  padding: 10px;
+  margin-top: -25px;
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+}
+main .pizza .pizzaComp .up {
+  margin-top: -14px;
+}
+main .pizza .pizzaComp .form_radio_group {
+  box-shadow: -1px -1px 20px rgba(130, 130, 130, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+main .pizza .pizzaComp .form_radio_group button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .pizza .pizzaComp .form_radio_group button img {
+  margin-left: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .pizza .pizzaComp .form_radio_group-item {
+  display: inline-block;
+}
+main .pizza .pizzaComp .form_radio_group input[type=radio] {
+  display: none;
+}
+main .pizza .pizzaComp .form_radio_group label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+}
+main .pizza .pizzaComp .form_radio_group .form_radio_group-item:first-child label {
+  border-radius: 6px;
+}
+main .pizza .pizzaComp .form_radio_group .form_radio_group-item:last-child label {
+  border-radius: 6px;
+}
+main .pizza .pizzaComp .form_radio_group input[type=radio]:checked + label {
+  border: 1px solid #FECC00;
+}
+main .pizza .pizzaComp .form_radio_group label:hover {
+  color: #666;
+}
+main .pizza .pizzaComp hr {
+  margin-top: 0px;
+  border: 1px dashed rgba(130, 130, 130, 0.2);
+}
+main .form-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  margin-top: 50px;
+  color: #333333;
+}
+main .form-style button {
+  background-color: #FECC00;
+  border: none;
+  width: 103px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.4s;
+}
+main .form-style button:hover {
+  background-color: #dfb200;
+}
+main .form-style span {
+  font-size: 14px;
+}
+main .form-style .counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .form-style .counter.noActive {
+  display: none;
+}
+main .form-style .counter button {
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid rgba(87, 86, 86, 0.2);
+}
+main .form-style .counter input {
+  width: 35px;
+  height: 35px;
+  background-color: #FECC00;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+#clickCombo.active {
+  display: flex;
+}
+
+@-webkit-keyframes navUp {
+  0% { /* Старт анимации */
+    opacity: 0;
+    transform: translate3d(0%, -100px, 0px);
+  }
+  100% { /* в финале анимации - финал это заданная 0.55s */
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes navUp {
+  0% { /* Старт анимации */
+    opacity: 0;
+    transform: translate3d(0%, -100px, 0px);
+  }
+  100% { /* в финале анимации - финал это заданная 0.55s */
+    opacity: 1;
+    transform: none;
+  }
+}
+.navUp {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  margin-top: -150px;
+  -webkit-animation: navUp 0.5s ease-in;
+          animation: navUp 0.5s ease-in;
+}
+.navUp .logo img {
+  width: 120px;
+}
+.navUp ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navUp ul a {
+  text-decoration: none;
+  color: #333333;
+  margin-left: 50px;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.navUp ul a:hover {
+  color: #FECC00;
+}
+.navUp .basket {
+  border: 2px solid #FECC00;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.navUp .basket a {
+  text-decoration: none;
+  color: #333333;
+}
+.navUp .basket img {
+  width: 20px;
+}
+
+.confirmation {
+  background-color: rgba(87, 86, 86, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-top: -10.8%;
+  margin-left: -25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.confirmation .fon {
+  margin-top: 50%;
+  width: 300px;
+}
+.confirmation .block-confirmation {
+  background-color: #EFF7F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: navUp 0.5s ease-in;
+          animation: navUp 0.5s ease-in;
+}
+.confirmation .block-confirmation button {
+  border: none;
+  background: none;
+  margin-left: 92%;
+}
+.confirmation .block-confirmation button img {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.confirmation .block-confirmation img:nth-of-type(2) {
+  width: 100%;
+}
+.confirmation .block-confirmation .block-confirmation_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  position: absolute;
+}
+.confirmation .block-confirmation .block-confirmation_text .icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.confirmation .block-confirmation .block-confirmation_text .icon-text span {
+  font-weight: 600;
+  width: 70%;
+}
+.confirmation .block-confirmation .block-confirmation_text button {
+  cursor: pointer;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  margin-left: 1px;
+  font-size: 12px;
+  margin-top: 50px;
+  transition: 0.4s;
+}
+.confirmation .block-confirmation .block-confirmation_text button:nth-child(1) {
+  background-color: white;
+  border: 1px solid #FECC00;
+}
+.confirmation .block-confirmation .block-confirmation_text button:nth-child(1):hover {
+  background-color: #FECC00;
+}
+.confirmation .block-confirmation .block-confirmation_text button:nth-child(2) {
+  background-color: #FECC00;
+  color: #333333;
+}
+.confirmation .block-confirmation .block-confirmation_text button:nth-child(2):hover {
+  background-color: #dfb200;
+}/*# sourceMappingURL=style.css.map */

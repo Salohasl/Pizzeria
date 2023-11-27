@@ -1,0 +1,57 @@
+
+    
+    @media only screen and (max-width:1200px){ 
+      
+    }
+  
+  @media only screen and (max-width:992px){
+    nav{
+      display: none;
+    }
+    .menuBtn{
+      display: flex;
+    }
+    
+     nav.popUp{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      margin-top: 50px;
+      height: 150px;
+      width: 100%;
+      animation-duration: 0.55s;  /* Время работы анимации */
+      animation-fill-mode: both;  /* Поведение анимации */
+      animation-name: fadeInDown;/* Имя анимации */
+    } 
+   
+    
+    @keyframes fadeInDown { /* Сама анимация */
+      0% {                /* Старт анимации */
+          opacity: 0;
+          transform: translate3d(100%, 0px, 0px);
+      }
+      100% {              /* в финале анимации - финал это заданная 0.55s */
+          opacity: 1;
+          transform: none;
+      }
+    }
+  
+  }
+  @media only screen and (max-width:768px){ /*-------ГОТОВО-------*/
+    
+  }
+  @media only screen and (max-width:570px){
+   
+  }
+  @media only screen and (max-width:400px){
+    
+  }
+  @media only screen and (max-width:320px){
+    
+  }
+  
